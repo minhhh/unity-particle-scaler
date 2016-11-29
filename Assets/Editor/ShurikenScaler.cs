@@ -125,6 +125,11 @@ public class ShurikenScaler : EditorWindow
 
         SerializedObject so = new SerializedObject (ps);
 
+        so.FindProperty ("ShapeModule.radius").floatValue *= multiplier;
+        so.FindProperty ("ShapeModule.length").floatValue *= multiplier;
+        so.FindProperty ("ShapeModule.boxX").floatValue *= multiplier;
+        so.FindProperty ("ShapeModule.boxY").floatValue *= multiplier;
+        so.FindProperty ("ShapeModule.boxZ").floatValue *= multiplier;
         so.FindProperty ("VelocityModule.x.scalar").floatValue *= multiplier;
         so.FindProperty ("VelocityModule.y.scalar").floatValue *= multiplier;
         so.FindProperty ("VelocityModule.z.scalar").floatValue *= multiplier;
