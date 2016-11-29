@@ -10,9 +10,13 @@ You can use this Editor Window when you have an GameObject with a `ParticleSyste
 
 You can click `Reset` to set the scale back to 1. You can also select other GameObject and it will remember the scale of the previous ones. Internally, it uses a static array to store the scale by InstanceId. You can also Play, Pause or Stop the particles.
 
-Does not support run-time scaling.
+**Known issues**
 
-## TODO
+* Does not support run-time scaling.
+* When you scale up and down many times, it will have small errors due to floating point imprecision.
+
+**TODO**
+
 * Perhaps add some options to control the scale of individual system such as `ShapeModule`, `VelocityModule`, `ForceModule`, etc?
 
 ## Change History
