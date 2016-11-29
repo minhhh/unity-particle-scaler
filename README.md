@@ -12,6 +12,9 @@ You can click `Reset` to set the scale back to 1. You can also select other Game
 
 Does not support run-time scaling.
 
+## TODO
+* Perhaps add some options to control the scale of individual system such as `ShapeModule`, `VelocityModule`, `ForceModule`, etc?
+
 ## Change History
 
 **Version 1.0.1**
